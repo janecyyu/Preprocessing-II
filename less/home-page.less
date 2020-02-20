@@ -1,4 +1,20 @@
 .home {
+  header {
+    border-bottom: @bb;
+    .banner{
+      height: 250px;
+      width: 100%;
+      background-image: url(../img/fun-bus.jpg);
+      background-size: cover;
+
+      @media @phone {
+        height: 100px;
+      }
+    }
+    h2 {
+      padding-top: 15px;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,26 +22,42 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @phone {
+      flex-direction: column;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%;
+      }
+
     }
+
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @phone {
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
       }
+
     }
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @phone {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +74,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +89,73 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media @tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phone {
+        width: 90%;
+        .df(center, center);
+        flex-direction: column;
+      }
+
+      @media @tablet {
+        width: 90%;
+        .df(center, center);
+        flex-direction: column;
+      }
+
+      .btn {
+        .btn();
+
+        @media @phone {
+          .btn(@width: 90%)
+        }
+        @media @tablet {
+          .btn(@width: 90%)
+        }
+      }
+    }
+  }
+
+  .apply {
+    // border: @give_border;
+    border-top: @bb;
+    padding-top: 4%;
+
+    form {
+      padding: 30px 0;
+      .df(flex-start,"");
+      flex-direction: column;
+
+      label {
+        margin: 10px 0;
+        font-size: 1.5rem;
+        input {
+          width: 100%;
+          margin: 5px 0;
+        }
+        #first-name, #last-name, #email, #number {
+          height: 30px;
+        }
+        #packageA, #packageB, #packageC {
+          width: 15px;
+        }
+        textarea {
+          margin: 5px 0;
+          width: 100%;
+          height: 100px;
+        }
+      }
     }
   }
 }// home

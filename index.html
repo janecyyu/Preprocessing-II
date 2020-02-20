@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/hover.css" rel="stylesheet" media="all">
   <title>Fun Bus Travel Agency - Solution</title>
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
@@ -15,11 +16,29 @@
 </head>
 
 <body>
+  <div class="navigation">
+    <div class="logo">
+      <h1>Fun Bus</h1>
+      
+    </div>
+    <div class="menu">
+      <a href="">Home</a>
+      <a href="">About Us</a>
+      <a href="">Blog</a>
+      <a href="">Contact</a>
+    </div>
+  </div>
 
-  
-     
   <div class="container home">
-   
+    <header>
+      <div class="banner"></div>
+      <h2>Welcome To Fun Bus!</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur 
+        adipisicing elit. Recusandae optio ipsa consequuntur, 
+        omnis quibusdam repellat voluptates consectetur vel atque 
+        sint ea sit magni quaerat. Magnam iste officia harum odit quae?</p>
+    </header>
+
     <section class="content-section">
       <div class="text-content">
         <h2>Let's Go!</h2>
@@ -27,42 +46,73 @@
         <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
       </div>
       <div class="img-content">
-        <img src="img/adventure.jpg" alt="Let's go on an adventure!">
+        <img class="hvr-glow" src="img/adventure.jpg" alt="Let's go on an adventure!">
       </div>
     </section>
     <section class="content-section inverse-content">
       <div class="img-content">
-          <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
+          <img class="hvr-glow" src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
       </div>
       <div class="text-content">
         <h2>Adventure Awaits</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p> 
         <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
       </div>
-     
+
     </section>
     <section class="content-destination">
       <h2>Pick Your Destination</h2>
       <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-      <img src="img/destination.jpg" alt="Second slide">
+      <img class="hvr-glow" src="img/destination.jpg" alt="Second slide">
     </section>
     <section class="content-pick">
 
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn">Sign Me Up!</button>
       </div>
+    </section>
+
+    <section class="apply">
+      <h2>Book Now!</h2>
+      <form action="">
+        <label for="first-name">First Name:
+          <input type="text"  id="first-name" placeholder="First Name" required>
+        </label>
+        <label for="last-name">Last Name:
+          <input id="last-name" type="text" placeholder="Last Name" required>
+        </label><br>
+        <label for="email">Email:
+          <input id="email" type="email" placeholder="Email" required>
+        </label>
+        <label for="number">Phone Number:
+          <input type="phone"  id="number" placeholder="Phone Number" required>
+        </label>
+        <label for="packageA">Choose Your Vacation:<br>
+          <input type="checkbox" id="packageA" name="packages"><span>Fun In The Sun</span>
+        </label>
+        <label for="packageB">
+          <input type="checkbox" id="packageB" name="packages">Mountain Excursion
+        </label>
+        <label for="packageC">
+          <input type="checkbox" id="packageC" name="packages">Island Getaway
+        </label>
+        <label for="comments">Special Instructions:
+          <textarea placeholder="Special Instructions"></textarea>
+        </label>
+
+      </form>
     </section>
   </div><!-- container -->
 
