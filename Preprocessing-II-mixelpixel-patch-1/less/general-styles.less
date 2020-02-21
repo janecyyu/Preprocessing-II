@@ -1,0 +1,31 @@
+// General Styles
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    background-color:darken(rgb(255, 242, 242),10%);
+
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 880px;
+    margin: auto;
+
+    @media @tablet{
+        max-width: 680px;
+    }
+
+    @media @phone {
+        max-width: 300px;
+    }
+}
